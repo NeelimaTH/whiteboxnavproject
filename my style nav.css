@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    font-size: 25px;
+    background-color: white;
+    color: black;
+
+}
+
+nav {
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 2px;
+    display: block;
+
+
+
+}
+
+a:hover {
+    text-decoration: blue underline;
+}
+
+nav ul li ul li a {
+    padding: 10px 20px;
+}
+
+
+
+.loginpage {
+    margin-left: 15px;
+    background-color: blue;
+    color: white;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    justify-content: center
+}
+
+.Register {
+    margin-left: 15px;
+    background-color: blue;
+    color: white;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    cursor: pointer;
+    justify-content: center;
+
+}
+
+.loginpage:hover {
+    background-color: blue;
+}
+
+
+
+
+header .navbar ul li ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 150px;
+    list-style: none;
+    padding: 0;
+    z-index: 999;
+    color: black;
+
+}
+
+#dice {
+    position: absolute;
+    margin-top: 10px;
+    margin-right: auto;
+    width: 20px;
+    color: black;
+}
+
+#moon {
+    position: absolute;
+    display: block;
+    width: 150px;
+    height: 50px;
+    margin-left: 900px;
+
+}
+
+
+#theme-switch{
+    padding: 0;
+    margin-left: 900px;
+    display: flex;
+    border-radius: 50%;
+    background-color:var(--base-variant) ;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+
+
+.dark-mode {
+    background-color:white;
+    color: black;
+}
+
+
+header .navbar ul li:hover>ul {
+    display: initial;
+}
+
+:root{
+    --base-color:white;
+    --base-variant:#e8e9ed;
+    --text-color:#111528;
+    --secondary-text:#232738;
+    --primary-color:#3a435d;
+    --acent-color:#0071ff;
+ }
+ .dark-mode{
+
+    --base-color:#070b1d;
+    --base-variant:#101425;
+    --text-color:#ffffff;
+    --secondary-text:#a4a5b8;
+    --primary-color:white;
+    --acent-color:white; 
+}
+ 
+#theme-switch svg{
+    fill:var(--primary-color);
+
+}
+#theme-switch svg:last-child{
+    display:none;
+}
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+.darkmode #theme-switch svg:last-child{
+    display:block;
+}
